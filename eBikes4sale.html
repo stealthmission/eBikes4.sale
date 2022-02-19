@@ -1,0 +1,55 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>eBikes for Sale!</title>
+</head>
+
+<body>
+    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="paypal">
+        <img
+            src="https://user-images.githubusercontent.com/40618091/154780686-88ea02ba-e16d-4922-a222-eb2cd5832c49.jpg" /><br /><br /><br />
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="upload" value="1" />
+        <input type="hidden" name="item_name_1" value="Black eBike" /><input type="hidden" name="amount_1"
+            value="3999.99" />
+        <input type="hidden" name="quantity_1" value="1" />
+        <input type="hidden" name="on0_1" value="size" />
+        <select name="os0_1">
+            <option value="">Select a Tire Size</option>
+            <option value="small">26" MTB Wheel</option>
+            <option value="medium">26" Fat Tire Wheel</option>
+            <option value="large">20" Motorcycle Wheel</option>
+        </select><br /><br />
+        <input type="hidden" name="on1_1" value="material" />
+        <select name="os1_1">
+            <option value="">Power rating</option>
+            <option value="spandex">3000 Watts</option>
+            <option value="wool">6000 Watts</option>
+            <option value="cotton">12000 Watts</option>
+        </select><br /><br />
+
+        <input type="hidden" name="business" value="sb-0t7p814005228@business.example.com" />
+        <br /><br /><br /><br />
+        
+        <input type="hidden" name="no_shipping_2" value="2" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="bn" value="PP-ShopCartBF" />
+        <input type="image" name="submit" src="http://mm214.com/buttons/buynow.gif" />
+    </form>
+    <br /><br /><br /><br />
+
+
+    <!-- View Cart -->
+    <form action="https://www.sandbox.paypal.com/us/cgi-bin/webscr" method="post" target="paypal">
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="business" value="sb-0t7p814005228@business.example.com" />
+        <input type="hidden" name="display" value="1" />
+        <input type="image" name="submit" src="http://mm214.com/buttons/viewcart.gif" />
+    </form>
+    <br /><br /><br /><br />
+</body>
+
+</html>
